@@ -25,7 +25,7 @@ class ModuleRegistry {
     class ModuleProxy(private val name: String, val clazz: Class<*>) {
         private val log = logger<ModuleRegistry>()
         private lateinit var instance: Any
-        private var enabled = false
+        var enabled = false
 
         fun enable() {
             try {
