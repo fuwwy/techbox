@@ -28,6 +28,7 @@ dependencies {
     implementation("me.xdrop:fuzzywuzzy:1.3.1")
     implementation("net.jodah:expiringmap:0.5.9")
     testImplementation("io.kotest:kotest-runner-junit5:4.3.2")
+    testImplementation("io.mockk:mockk:1.10.4")
 }
 
 tasks.withType<Test> {
